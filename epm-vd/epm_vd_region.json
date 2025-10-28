@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dammam",
+        "name_ar": "الدمام",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [50.05, 26.50],
+          [50.25, 26.50],
+          [50.25, 26.35],
+          [50.05, 26.35],
+          [50.05, 26.50]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khobar",
+        "name_ar": "الخبر",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [50.15, 26.35],
+          [50.30, 26.35],
+          [50.30, 26.20],
+          [50.15, 26.20],
+          [50.15, 26.35]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhahran",
+        "name_ar": "الظهران",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [50.10, 26.30],
+          [50.20, 26.30],
+          [50.20, 26.22],
+          [50.10, 26.22],
+          [50.10, 26.30]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qatif",
+        "name_ar": "القطيف",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [49.95, 26.60],
+          [50.15, 26.60],
+          [50.15, 26.50],
+          [49.95, 26.50],
+          [49.95, 26.60]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jubail",
+        "name_ar": "الجبيل",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [49.55, 27.10],
+          [49.80, 27.10],
+          [49.80, 26.90],
+          [49.55, 26.90],
+          [49.55, 27.10]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ras Tanura",
+        "name_ar": "رأس تنورة",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [50.00, 26.75],
+          [50.15, 26.75],
+          [50.15, 26.65],
+          [50.00, 26.65],
+          [50.00, 26.75]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Al Ahsa",
+        "name_ar": "الأحساء",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [49.45, 25.50],
+          [49.75, 25.50],
+          [49.75, 25.30],
+          [49.45, 25.30],
+          [49.45, 25.50]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hafar Al Batin",
+        "name_ar": "حفر الباطن",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [45.90, 28.50],
+          [46.20, 28.50],
+          [46.20, 28.30],
+          [45.90, 28.30],
+          [45.90, 28.50]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buqayq",
+        "name_ar": "بقيق",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [49.60, 25.95],
+          [49.75, 25.95],
+          [49.75, 25.85],
+          [49.60, 25.85],
+          [49.60, 25.95]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khafji",
+        "name_ar": "الخفجي",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [48.45, 28.50],
+          [48.65, 28.50],
+          [48.65, 28.35],
+          [48.45, 28.35],
+          [48.45, 28.50]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nairiyah",
+        "name_ar": "النعيرية",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [48.45, 27.55],
+          [48.65, 27.55],
+          [48.65, 27.40],
+          [48.45, 27.40],
+          [48.45, 27.55]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Al Udaid",
+        "name_ar": "العديد",
+        "type": "municipality"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [49.10, 25.95],
+          [49.30, 25.95],
+          [49.30, 25.80],
+          [49.10, 25.80],
+          [49.10, 25.95]
+        ]]
+      }
+    }
+  ]
+}
