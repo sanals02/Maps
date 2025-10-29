@@ -2,47 +2,17 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "id": "region",
-      "type": "Feature",
-      "properties": {
-        "name": "Eastern Province (approx)",
-        "name_ar": "المنطقة الشرقية (تقريبية)",
-        "type": "region",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.8
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [45.70, 24.50],
-            [49.20, 24.50],
-            [50.35, 25.00],
-            [50.35, 26.50],
-            [50.35, 28.50],
-            [48.00, 28.50],
-            [45.70, 28.50],
-            [45.70, 24.50]
-          ]
-        ]
-      }
-    },
-
-    {
       "id": "1",
       "type": "Feature",
       "properties": {
         "name": "Dammam",
         "name_ar": "الدمام",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -59,7 +29,6 @@
         ]
       }
     },
-
     {
       "id": "2",
       "type": "Feature",
@@ -67,11 +36,11 @@
         "name": "Khobar",
         "name_ar": "الخبر",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -88,7 +57,6 @@
         ]
       }
     },
-
     {
       "id": "3",
       "type": "Feature",
@@ -96,11 +64,11 @@
         "name": "Dhahran",
         "name_ar": "الظهران",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -117,7 +85,6 @@
         ]
       }
     },
-
     {
       "id": "4",
       "type": "Feature",
@@ -125,11 +92,11 @@
         "name": "Qatif",
         "name_ar": "القطيف",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -146,7 +113,6 @@
         ]
       }
     },
-
     {
       "id": "5",
       "type": "Feature",
@@ -154,11 +120,11 @@
         "name": "Jubail",
         "name_ar": "الجبيل",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -175,7 +141,6 @@
         ]
       }
     },
-
     {
       "id": "6",
       "type": "Feature",
@@ -183,11 +148,11 @@
         "name": "Ras Tanura",
         "name_ar": "رأس تنورة",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -204,7 +169,6 @@
         ]
       }
     },
-
     {
       "id": "7",
       "type": "Feature",
@@ -212,11 +176,11 @@
         "name": "Al Ahsa",
         "name_ar": "الأحساء",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -233,7 +197,6 @@
         ]
       }
     },
-
     {
       "id": "8",
       "type": "Feature",
@@ -241,11 +204,11 @@
         "name": "Hafar Al Batin",
         "name_ar": "حفر الباطن",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -262,7 +225,6 @@
         ]
       }
     },
-
     {
       "id": "9",
       "type": "Feature",
@@ -270,11 +232,11 @@
         "name": "Buqayq",
         "name_ar": "بقيق",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -291,7 +253,6 @@
         ]
       }
     },
-
     {
       "id": "10",
       "type": "Feature",
@@ -299,11 +260,11 @@
         "name": "Khafji",
         "name_ar": "الخفجي",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -320,7 +281,6 @@
         ]
       }
     },
-
     {
       "id": "11",
       "type": "Feature",
@@ -328,11 +288,11 @@
         "name": "Nairiyah",
         "name_ar": "النعيرية",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -349,7 +309,6 @@
         ]
       }
     },
-
     {
       "id": "12",
       "type": "Feature",
@@ -357,11 +316,11 @@
         "name": "Al Udaid",
         "name_ar": "العديد",
         "type": "municipality",
-        "fill": "#ff0000",
-        "hover": "#ffff00",
-        "stroke": "#ffffff",
-        "stroke-width": 1,
-        "fillOpacity": 0.9
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
@@ -378,6 +337,5 @@
         ]
       }
     }
-
   ]
 }
