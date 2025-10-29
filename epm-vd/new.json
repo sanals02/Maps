@@ -2,219 +2,339 @@
   "type": "FeatureCollection",
   "features": [
     {
+      "id": "1",
       "type": "Feature",
       "properties": {
         "name": "Dammam",
         "name_ar": "الدمام",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [50.05, 26.50],
-          [50.25, 26.50],
-          [50.25, 26.35],
-          [50.05, 26.35],
-          [50.05, 26.50]
-        ]]
+        "coordinates": [
+          [
+            [50.08, 26.42],
+            [50.25, 26.45],
+            [50.28, 26.35],
+            [50.25, 26.25],
+            [50.10, 26.22],
+            [50.00, 26.28],
+            [50.08, 26.42]
+          ]
+        ]
       }
     },
     {
+      "id": "2",
       "type": "Feature",
       "properties": {
         "name": "Khobar",
         "name_ar": "الخبر",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [50.15, 26.35],
-          [50.30, 26.35],
-          [50.30, 26.20],
-          [50.15, 26.20],
-          [50.15, 26.35]
-        ]]
+        "coordinates": [
+          [
+            [50.10, 26.22],
+            [50.25, 26.25],
+            [50.32, 26.15],
+            [50.35, 26.02],
+            [50.20, 25.98],
+            [50.05, 26.05],
+            [50.10, 26.22]
+          ]
+        ]
       }
     },
     {
+      "id": "3",
       "type": "Feature",
       "properties": {
         "name": "Dhahran",
         "name_ar": "الظهران",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [50.10, 26.30],
-          [50.20, 26.30],
-          [50.20, 26.22],
-          [50.10, 26.22],
-          [50.10, 26.30]
-        ]]
+        "coordinates": [
+          [
+            [50.05, 26.05],
+            [50.20, 25.98],
+            [50.25, 25.85],
+            [50.18, 25.75],
+            [50.00, 25.80],
+            [49.95, 25.92],
+            [50.05, 26.05]
+          ]
+        ]
       }
     },
     {
+      "id": "4",
       "type": "Feature",
       "properties": {
         "name": "Qatif",
         "name_ar": "القطيف",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [49.95, 26.60],
-          [50.15, 26.60],
-          [50.15, 26.50],
-          [49.95, 26.50],
-          [49.95, 26.60]
-        ]]
+        "coordinates": [
+          [
+            [50.00, 26.28],
+            [50.25, 26.25],
+            [50.28, 26.35],
+            [50.15, 26.48],
+            [49.95, 26.45],
+            [49.90, 26.35],
+            [50.00, 26.28]
+          ]
+        ]
       }
     },
     {
+      "id": "5",
       "type": "Feature",
       "properties": {
         "name": "Jubail",
         "name_ar": "الجبيل",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [49.55, 27.10],
-          [49.80, 27.10],
-          [49.80, 26.90],
-          [49.55, 26.90],
-          [49.55, 27.10]
-        ]]
+        "coordinates": [
+          [
+            [49.40, 27.05],
+            [49.75, 27.08],
+            [49.90, 26.95],
+            [49.88, 26.78],
+            [49.65, 26.72],
+            [49.45, 26.85],
+            [49.40, 27.05]
+          ]
+        ]
       }
     },
     {
+      "id": "6",
       "type": "Feature",
       "properties": {
         "name": "Ras Tanura",
         "name_ar": "رأس تنورة",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [50.00, 26.75],
-          [50.15, 26.75],
-          [50.15, 26.65],
-          [50.00, 26.65],
-          [50.00, 26.75]
-        ]]
+        "coordinates": [
+          [
+            [49.90, 26.35],
+            [50.00, 26.28],
+            [50.05, 26.05],
+            [49.95, 25.92],
+            [49.80, 26.00],
+            [49.85, 26.20],
+            [49.90, 26.35]
+          ]
+        ]
       }
     },
     {
+      "id": "7",
       "type": "Feature",
       "properties": {
         "name": "Al Ahsa",
         "name_ar": "الأحساء",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [49.45, 25.50],
-          [49.75, 25.50],
-          [49.75, 25.30],
-          [49.45, 25.30],
-          [49.45, 25.50]
-        ]]
+        "coordinates": [
+          [
+            [49.00, 25.35],
+            [49.65, 25.40],
+            [49.80, 25.20],
+            [49.75, 24.95],
+            [49.35, 24.90],
+            [49.05, 25.05],
+            [49.00, 25.35]
+          ]
+        ]
       }
     },
     {
+      "id": "8",
       "type": "Feature",
       "properties": {
         "name": "Hafar Al Batin",
         "name_ar": "حفر الباطن",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [45.90, 28.50],
-          [46.20, 28.50],
-          [46.20, 28.30],
-          [45.90, 28.30],
-          [45.90, 28.50]
-        ]]
+        "coordinates": [
+          [
+            [45.75, 28.45],
+            [46.45, 28.50],
+            [46.60, 28.30],
+            [46.50, 28.05],
+            [46.00, 28.00],
+            [45.70, 28.15],
+            [45.75, 28.45]
+          ]
+        ]
       }
     },
     {
+      "id": "9",
       "type": "Feature",
       "properties": {
         "name": "Buqayq",
         "name_ar": "بقيق",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [49.60, 25.95],
-          [49.75, 25.95],
-          [49.75, 25.85],
-          [49.60, 25.85],
-          [49.60, 25.95]
-        ]]
+        "coordinates": [
+          [
+            [49.35, 24.90],
+            [49.75, 24.95],
+            [49.88, 24.78],
+            [49.80, 24.60],
+            [49.40, 24.55],
+            [49.20, 24.70],
+            [49.35, 24.90]
+          ]
+        ]
       }
     },
     {
+      "id": "10",
       "type": "Feature",
       "properties": {
         "name": "Khafji",
         "name_ar": "الخفجي",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [48.45, 28.50],
-          [48.65, 28.50],
-          [48.65, 28.35],
-          [48.45, 28.35],
-          [48.45, 28.50]
-        ]]
+        "coordinates": [
+          [
+            [48.15, 28.40],
+            [48.75, 28.45],
+            [48.95, 28.28],
+            [48.85, 28.05],
+            [48.35, 28.00],
+            [48.10, 28.15],
+            [48.15, 28.40]
+          ]
+        ]
       }
     },
     {
+      "id": "11",
       "type": "Feature",
       "properties": {
         "name": "Nairiyah",
         "name_ar": "النعيرية",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [48.45, 27.55],
-          [48.65, 27.55],
-          [48.65, 27.40],
-          [48.45, 27.40],
-          [48.45, 27.55]
-        ]]
+        "coordinates": [
+          [
+            [48.15, 27.45],
+            [48.75, 27.50],
+            [48.95, 27.32],
+            [48.85, 27.08],
+            [48.35, 27.03],
+            [48.10, 27.20],
+            [48.15, 27.45]
+          ]
+        ]
       }
     },
     {
+      "id": "12",
       "type": "Feature",
       "properties": {
         "name": "Al Udaid",
         "name_ar": "العديد",
-        "type": "municipality"
+        "type": "municipality",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [[
-          [49.10, 25.95],
-          [49.30, 25.95],
-          [49.30, 25.80],
-          [49.10, 25.80],
-          [49.10, 25.95]
-        ]]
+        "coordinates": [
+          [
+            [48.80, 26.85],
+            [49.20, 26.90],
+            [49.40, 26.75],
+            [49.35, 26.55],
+            [48.95, 26.50],
+            [48.75, 26.65],
+            [48.80, 26.85]
+          ]
+        ]
       }
     }
   ]
