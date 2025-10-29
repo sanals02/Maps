@@ -23,7 +23,12 @@
         "TYPE_2": "Muhafazah",
         "ENGTYPE_2": "Governorate",
         "CC_2": "NA",
-        "HASC_2": "NA"
+        "HASC_2": "NA",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1890,7 +1895,12 @@
         "TYPE_2": "Muhafazah",
         "ENGTYPE_2": "Governorate",
         "CC_2": "NA",
-        "HASC_2": "NA"
+        "HASC_2": "NA",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2521,7 +2531,12 @@
         "TYPE_2": "Muhafazah",
         "ENGTYPE_2": "Governorate",
         "CC_2": "NA",
-        "HASC_2": "NA"
+        "HASC_2": "NA",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4044,7 +4059,12 @@
         "TYPE_2": "Muhafazah",
         "ENGTYPE_2": "Governorate",
         "CC_2": "NA",
-        "HASC_2": "NA"
+        "HASC_2": "NA",
+        "color": "#ff6b6b",
+        "strokeColor": "#ffffff",
+        "strokeWidth": 2,
+        "fillOpacity": 0.8,
+        "hoverColor": "#ffff00"
       },
       "geometry": {
         "type": "MultiPolygon",
