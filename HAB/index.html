@@ -1,120 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-<title>Map Iframe</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-<style>
-    html, body, #map {
+<meta charset="UTF-8" />
+<title>خريطة حفر الباطن عالية الدقة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <!-- Leaflet -->
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ 
+  <style>
+    html, body {
       height: 100%;
       margin: 0;
-      padding: 0;
+      background: #000;
+      font-family: "TheSansArabic", sans-serif;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+    .leaflet-popup-content {
+      text-align: center;
+      direction: rtl;
+      font-size: 14px;
     }
 </style>
 </head>
+ 
 <body>
 <div id="map"></div>
  
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
- 
   <script>
-    const map = L.map("map").setView([0, 0], 2);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18,
-      attribution: "© OpenStreetMap contributors"
-    }).addTo(map);
- 
-    const clusterGroup = L.markerClusterGroup();
-    map.addLayer(clusterGroup);
- 
-    let markerDataMap = new Map();
- 
-    // Listen for messages from parent
-    window.addEventListener("message", (event) => {
-      console.log("Iframe: message received:", event.data);
-      const data = event.data;
-      if (!data || !data.incidentData) {
-        console.warn("Iframe: no incidentData in message");
-        return;
-      }
-      const arr = data.incidentData;
-      console.log("Iframe: incidentData array:", arr);
- 
-      clusterGroup.clearLayers();
-      markerDataMap.clear();
- 
-      let bounds = [];
- 
-      arr.forEach((d, idx) => {
-        const { state, lat, long, count } = d;
-        if (lat == null || long == null) return;
- 
-        const tooltip = `
-<strong>State:</strong> ${state}<br/>
-<strong>Lat:</strong> ${lat}<br/>
-<strong>Long:</strong> ${long}<br/>
-<strong>Count:</strong> ${count}
-        `;
- 
-        const marker = L.marker([lat, long], {
-          title: state
-        });
-        marker.bindTooltip(tooltip, {
-          direction: "top",
-          permanent: false,
-          opacity: 0.9
-        });
- 
-        // ONLY single marker clicks send message to parent
-        marker.on("click", (e) => {
-          const payload = {
-            type: "mapClick",
-            state: state,
-            lat: lat,
-            long: long,
-            count: count,
-            label: state
-          };
-          window.parent.postMessage(payload, "*");
-          console.log("Iframe: marker clicked, payload:", payload);
-        });
- 
-        clusterGroup.addLayer(marker);
-        bounds.push([lat, long]);
-      });
- 
-      // CLUSTER CLICK: do NOT send variable update, just open popup
-      clusterGroup.on("clusterclick", (a) => {
-        const markers = a.layer.getAllChildMarkers();
-        if (markers.length > 0) {
-          const first = markers[0].getLatLng();
-          const popup = `
-<strong>Cluster size:</strong> ${markers.length}<br/>
-<strong>First state:</strong> ${markers[0].options.title}<br/>
-<strong>Lat:</strong> ${first.lat}<br/>
-<strong>Long:</strong> ${first.lng}
-          `;
-          L.popup()
-            .setLatLng(a.latlng)
-            .setContent(popup)
-            .openOn(map);
- 
-          console.log("Iframe: cluster clicked, popup shown but no variable update");
-          // NOTE: NO window.parent.postMessage here
-        }
-      });
- 
-      if (bounds.length > 0) {
-        const b = L.latLngBounds(bounds);
-        map.fitBounds(b, { padding: [40, 40] });
-      }
+    // === Initialize map centered on Hafar Al-Batin ===
+    const map = L.map("map", {
+      center: [28.4322, 45.9708], // 🏙️ City center
+      zoom: 13,                   // ⬅️ Zoomed out to see full city area
+      minZoom: 10,
+      maxZoom: 22,                // 🔍 High detail available
+      zoomControl: true,
     });
  
-    console.log("Iframe map page initialized, waiting for parent message...");
+    // === ESRI World Imagery (High-Resolution Satellite) ===
+    const esriSatellite = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      {
+        maxZoom: 22,
+        attribution: "© Esri, Maxar, Earthstar Geographics",
+      }
+    ).addTo(map);
+ 
+    // === ESRI Label Layer (shows street names, places, buildings) ===
+     const esriLabels = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+      {
+        maxZoom: 22,
+        opacity: 1,
+        attribution: "© Esri",
+      }
+    ).addTo(map);
+    
+ 
+    // === Marker handling ===
+    let markers = [];
+    let selectedMarker = null;
+ 
+    // --- Receive data from Grafana ---
+    window.addEventListener("message", (event) => {
+      if (!event.data || event.data.type !== "habData") return;
+ 
+      markers.forEach((m) => map.removeLayer(m));
+      markers = [];
+ 
+      const regionData = event.data.data || [];
+      if (!regionData.length) return;
+ 
+      regionData.forEach((r) => {
+        const marker = L.circleMarker([r.lat, r.long], {
+          radius: 8,
+          color: "#ff0000",
+          fillColor: "#ff0000",
+          fillOpacity: 0.9,
+          weight: 1.5,
+        })
+          .addTo(map)
+          .bindPopup(`<b>${decodeURIComponent(r.name)}</b>`)
+          .on("click", () => {
+            // Reset previous
+            if (selectedMarker) {
+              selectedMarker.setStyle({
+                color: "#ff0000",
+                fillColor: "#ff0000",
+                radius: 8,
+              });
+            }
+ 
+            // Highlight current
+            marker.setStyle({
+              color: "#ffff00",
+              fillColor: "#ffff00",
+              radius: 11,
+            });
+            selectedMarker = marker;
+ 
+            // Send region to Grafana (without reload)
+            window.parent.postMessage(
+              {
+                type: "mapClick",
+                region: decodeURIComponent(r.name),
+              },
+              "*"
+            );
+          });
+ 
+        markers.push(marker);
+      });
+ 
+      if (regionData.length > 1) {
+        const bounds = L.latLngBounds(regionData.map((r) => [r.lat, r.long]));
+        map.fitBounds(bounds, { padding: [40, 40] });
+      }
+    });
 </script>
 </body>
 </html>
